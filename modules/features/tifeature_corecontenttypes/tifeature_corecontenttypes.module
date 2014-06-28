@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Core content types feature.
+ */
+
+include_once 'tifeature_corecontenttypes.features.inc';
