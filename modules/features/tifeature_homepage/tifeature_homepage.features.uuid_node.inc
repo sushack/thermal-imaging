@@ -30,15 +30,15 @@ function tifeature_homepage_uuid_features_default_content() {
   'body' => array(
     'und' => array(
       0 => array(
-        'value' => 'This is a homepage
+        'value' => '<h1><a href="http://thermal.local/content/resident-signup" >Want your house thermal imaged?</a></h1>
 
-<h1>Want your house thermal imaged?</h1>
+<h1><a href="/user">Are you in an existing local thermal imaging group?</a></h1>
 
 <h1>Want to set up a local thermal imaging group?</h1>',
         'summary' => '',
         'format' => 'full_html',
-        'safe_value' => '<p>This is a homepage</p>
-<h1>Want your house thermal imaged?</h1>
+        'safe_value' => '<h1><a href="http://thermal.local/content/resident-signup">Want your house thermal imaged?</a></h1>
+<h1><a href="/user">Are you in an existing local thermal imaging group?</a></h1>
 <h1>Want to set up a local thermal imaging group?</h1>
 ',
         'safe_summary' => '',
