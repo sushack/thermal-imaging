@@ -6,6 +6,7 @@ projects[drupal][version] = "7.28"
 
 ; Modules
 projects[admin_menu][version] = "3.0-rc4"
+projects[auto_nodetitle][version] = 1.0
 projects[coder][version] = "2.2"
 projects[ctools][version] = "1.4"
 projects[devel][version] = "1.5"
@@ -25,6 +26,7 @@ projects[libraries][version] = "2.2"
 projects[link][version] = "1.2"
 projects[media][version] = "2.0-alpha3"
 projects[module_filter][version] = "2.0-alpha2"
+projects[og][version] = 2.7
 projects[pathauto][version] = "1.2"
 projects[permission_select][version] = "1.2"
 projects[rules][version] = "2.7"
