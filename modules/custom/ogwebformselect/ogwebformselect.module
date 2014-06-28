@@ -12,7 +12,22 @@ function ogwebformselect_form_alter(&$form, &$form_state, $form_id) {
   if (!isset($form['#node']) || $form['#node']->type != "webform") {
     return;
   }
-  $form['submitted']['local_group']['#options'] = array(
-    'This IS dynamic',
-  );
+
+  $efq = new EntityFieldQueryExtraFields();
+  $efq->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'volunteer_group')
+    ->propertyCondition('status', 1);
+  $efq->addExtraField('', 'title', 'title', 'node');
+
+  $result = $efq->execute();
+
+  if (!isset($result['node'])) {
+    return;
+  }
+
+  $options = array();
+  foreach($result['node'] as $nid => $group_stub) {
+    $options[$nid] = $group_stub->extraFields->title;
+  }
+  $form['submitted']['local_group']['#options'] = $options;
 }

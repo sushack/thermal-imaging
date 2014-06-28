@@ -42,6 +42,11 @@ projects[webform][patch][] = https://www.drupal.org/files/issues/webform_uuid-20
 projects[workbench][version] = "1.2"
 projects[workbench_moderation][version] = "1.3"
 
+projects[efq_extra_field][type] = module
+projects[efq_extra_field][download][type] = git
+projects[efq_extra_field][download][url] = http://git.drupal.org/project/efq_extra_field.git
+projects[efq_extra_field][download][branch] = 7.x-1.x
+
 ; Libraries
 libraries[lessphp][download][type] = "get"
 libraries[lessphp][download][url] = "https://github.com/oyejorge/less.php/archive/master.zip"

@@ -1,3 +1,5 @@
 name = "OG Webform Select"
 description = "Provide a webform's select field with group names"
 core = 7.x
+
+dependencies[] = efq_extra_field
