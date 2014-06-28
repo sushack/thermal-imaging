@@ -36,7 +36,7 @@ function tifeature_groupcontent_default_fe_block_settings() {
         'region' => 'sidebar_first',
         'status' => 1,
         'theme' => 'therm',
-        'weight' => 0,
+        'weight' => -11,
       ),
     ),
   );
