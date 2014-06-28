@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Tie OG up to webform dynamic select options
+ */
+
+/**
+ * Implements hook_form_alter().
+ */
+function ogwebformselect_form_alter(&$form, &$form_state, $form_id) {
+  if (!isset($form['#node']) || $form['#node']->type != "webform") {
+    return;
+  }
+  $form['submitted']['local_group']['#options'] = array(
+    'This IS dynamic',
+  );
+}
