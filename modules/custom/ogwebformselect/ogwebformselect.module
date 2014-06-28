@@ -26,7 +26,7 @@ function ogwebformselect_form_alter(&$form, &$form_state, $form_id) {
   }
 
   $options = array();
-  foreach($result['node'] as $nid => $group_stub) {
+  foreach ($result['node'] as $nid => $group_stub) {
     $options[$nid] = $group_stub->extraFields->title;
   }
   $form['submitted']['local_group']['#options'] = $options;
