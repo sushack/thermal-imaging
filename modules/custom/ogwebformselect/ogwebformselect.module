@@ -55,6 +55,13 @@ function ogwebformselect_webform_submission_insert($webform_node, $submission) {
   $entity = entity_create('node', $node_array);
   $ewrapper = entity_metadata_wrapper('node', $entity);
 
+  $ewrapper->field_contact_name = $data_by_key['your_name'][0];
+  $ewrapper->field_email = $data_by_key['email'][0];
+  $ewrapper->field_phone = $data_by_key['phone_no'][0];
+  $ewrapper->field_postcode = $data_by_key['postcode'][0];
+  $ewrapper->field_town_city = $data_by_key['town_city'][0];
+  $ewrapper->field_street_address = $data_by_key['street_address'][0];
+
   // Save node though the wrapper.
   $ewrapper->save();
 

@@ -13,6 +13,7 @@ projects[devel][version] = "1.5"
 projects[diff][version] = "3.2"
 projects[ds][version] = "2.6"
 projects[eck][version] = "2.0-rc3"
+projects[email][version] = 1.3
 projects[entity][version] = "1.5"
 projects[entityreference][version] = "1.1"
 projects[exclude_node_title][version] = 1.7
