@@ -112,7 +112,7 @@ function tifeature_contactform_uuid_features_default_content() {
     'preview_message' => '',
     'preview_message_format' => NULL,
     'preview_excluded_components' => array(),
-    'next_serial' => 8,
+    'next_serial' => 24,
     'record_exists' => TRUE,
     'roles' => array(
       0 => 1,

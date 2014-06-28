@@ -31,3 +31,35 @@ function ogwebformselect_form_alter(&$form, &$form_state, $form_id) {
   }
   $form['submitted']['local_group']['#options'] = $options;
 }
+
+/**
+ * Implements hook_webform_submission_insert().
+ */
+function ogwebformselect_webform_submission_insert($webform_node, $submission) {
+  // Have to assemble a key=>cid map as webform stores data by cid.
+  $data_by_key = array();
+  foreach ($webform_node->webform['components'] as $cid => $data) {
+    if (isset($submission->data[$cid])) {
+      $data_by_key[$data['form_key']] = $submission->data[$cid];
+    }
+  }
+
+  // Set up a node and an entity wrapper.
+  $node_array = array(
+    'type' => 'report',
+    'uid' => 1,
+    'status' => 1,
+    'title' => "Report for " . trim($data_by_key['street_address'][0] . ", "
+      . $data_by_key['town_city'][0] . " " . $data_by_key['postcode'][0]),
+  );
+  $entity = entity_create('node', $node_array);
+  $ewrapper = entity_metadata_wrapper('node', $entity);
+
+  // Save node though the wrapper.
+  $ewrapper->save();
+
+  // Attach the group to it: best handled by og_group() which creates "membership".
+  if ($group = node_load($data_by_key['local_group'][0])) {
+    og_group('node', $data_by_key['local_group'][0], array('entity_type' => 'node', 'entity' => $entity));
+  }
+}
