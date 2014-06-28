@@ -20,13 +20,6 @@ function tifeature_coreconfig_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'less_dir';
-  $strongarm->value = '-mLoYCiA0RBPWa9Tsf_cltSDKYLti2tuWuy_nughBYE';
-  $export['less_dir'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'less_watch';
   $strongarm->value = 1;
   $export['less_watch'] = $strongarm;
