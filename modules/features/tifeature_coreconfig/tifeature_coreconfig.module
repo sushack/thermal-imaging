@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the Core config feature.
  */
+
+include_once 'tifeature_coreconfig.features.inc';
