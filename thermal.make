@@ -31,6 +31,7 @@ projects[strongarm][version] = "2.0"
 projects[token][version] = "1.5"
 projects[views][version] = "3.8"
 projects[views_bulk_operations][version] = "3.2"
+projects[uuid][version] = 1.0-alpha5
 projects[uuid_features][version] = 1.0-alpha4
 projects[uuid_features][patch][] = https://www.drupal.org/files/issues/uuid_features-doesnt-use-entity-uuid-load-save-to-load-save-node-2117453-2.patch
 projects[webform][version] = "4.0-rc4"
