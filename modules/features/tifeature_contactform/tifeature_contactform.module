@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Contact form feature.
+ */
+
+include_once 'tifeature_contactform.features.inc';
