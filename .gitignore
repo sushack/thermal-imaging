@@ -1,2 +1,2 @@
 # Ignore configuration files that may contain sensitive information.
-settings-local.php
+local-settings.php
