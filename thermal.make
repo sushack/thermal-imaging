@@ -14,6 +14,7 @@ projects[ds][version] = "2.6"
 projects[eck][version] = "2.0-rc3"
 projects[entity][version] = "1.5"
 projects[entityreference][version] = "1.1"
+projects[exclude_node_title][version] = 1.7
 projects[features][version] = "2.0"
 projects[features_extra][version] = "1.0-beta1"
 projects[field_group][version] = "1.4"

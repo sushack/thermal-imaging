@@ -1,0 +1,16 @@
+name = Homepage
+description = Homepage markup for thermal imaging
+core = 7.x
+package = Thermal Imaging
+version = 7.x-1.0
+project = tifeature_homepage
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = strongarm
+dependencies[] = tifeature_corecontenttypes
+dependencies[] = uuid_features
+__drupal_alter_by_ref[][node][page] = page
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[uuid_node][] = ea185bde-be0c-499e-84dd-3fe7611f4f88
+features[variable][] = site_frontpage
