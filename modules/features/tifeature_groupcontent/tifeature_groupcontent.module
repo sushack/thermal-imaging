@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Group content feature.
+ */
+
+include_once 'tifeature_groupcontent.features.inc';
