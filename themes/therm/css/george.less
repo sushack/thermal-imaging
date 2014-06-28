@@ -1,7 +1,25 @@
-.form-item input,
-.form-item textarea {
-  border: 2px solid lightgray;
-  border-radius: 5px;
-  font-size: 15px;
-  line-height: 24px;
+#content {
+  font-family: Calibri, Arial, sans-serif;
+
+  .form-item {
+    input, textarea {
+      border: 2px solid lightgrey;
+      border-radius: 5px;
+      font-size: 15px;
+      line-height: 24px;
+      outline: none;
+
+      &:focus {
+        border-color: grey;
+      }
+    }
+
+    textarea {
+      width: 454px;
+    }
+  }
+
+  .form-actions input {
+    outline: none;
+  }
 }
