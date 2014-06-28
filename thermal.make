@@ -35,4 +35,8 @@ projects[webform][version] = "3.20"
 projects[workbench][version] = "1.2"
 projects[workbench_moderation][version] = "1.3"
 
-
+; Libraries
+libraries[lessphp][download][type] = "get"
+libraries[lessphp][download][url] = "https://github.com/oyejorge/less.php/archive/master.zip"
+libraries[lessphp][directory_name] = "lessphp"
+libraries[lessphp][type] = "library"

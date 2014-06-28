@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Install file for feature: disables some modules.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function tifeature_coreconfig_install() {
+  tifeature_update_7001();
+}
+
+/**
+ * Implements hook_update_7001().
+ */
+function tifeature_coreconfig_update_7001() {
+  $modules_to_disable = array('overlay', 'toolbar', 'shortcut');
+  module_disable($modules_to_disable);
+  drupal_uninstall_modules($modules_to_disable);
+}
