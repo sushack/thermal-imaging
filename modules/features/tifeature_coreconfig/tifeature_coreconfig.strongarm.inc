@@ -251,37 +251,6 @@ function tifeature_coreconfig_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'drupal_css_cache_files';
-  $strongarm->value = array(
-    '823ba1006db72809515d2221cd02ec1075d7b49b0c07f49307b3a7930bfdd9e4' => 'public://css/css_pbm0lsQQJ7A7WCCIMgxLho6mI_kBNgznNUWmTWcnfoE.css',
-    '592db66916e1dd3416cbe95bcb34a5a68775eb0b7cf95e4c858671de35290cc9' => 'public://css/css_LS9OUalDR9-d_lCAvF3yUWjNU6yF8ZBm84jEPRvoyuQ.css',
-    'ee476488d878a833a32fedd9ece20ffb9c148fb8a8d4d44b6ea39b17f7d793ec' => 'public://css/css_EusI749_JhM-sSg8ELu7b4fH18EFHLSgw3pJxhd05Xc.css',
-    'ab52e82b13b45c0f8cd074c0a752854592a364a4db7a3144c741b02d7d42794b' => 'public://css/css_MnXiytJtb186Ydycnpwpw34cuUsHaKc80ey5LiQXhSY.css',
-    'ebb3f433ad4107b1ac31e9d7de0f9a5d399040e9f82b6364211dcfaadea158c0' => 'public://css/css_oqN5CdV437xfdYmgt8bEIViSuyXm8o4LLIbW5x0q7XY.css',
-    'fccd652d3910fa08677fd8e2f50a9b06c7753223b1708e23c3cd478d931946ad' => 'public://css/css__M8KL5WkKS0zPujFWxu7W6Kcp8e3_R59u-YiEUM4rX8.css',
-    '641b3f2b98e787aec26984ac0933e346cae985165c4e9b3ca5054e6293d8058c' => 'public://css/css_I6g6DciTX6bECwARx02bbUQQcex-S1c1rCERcmqpl1U.css',
-    '9141035c25323741af11c5e9b3a23020fd4e707d3065408a1ed30b2ec9161386' => 'public://css/css_YCw4TII7SQy4JOhZcdaAftmChCgbx5ZtnIyq90mo76U.css',
-    'ab4ede2bd0976ebee3d9d8f6c537a8096bf9dc03386864f5164d90f39ebb6cac' => 'public://css/css_TsVRTbLFUpEZAfw-_bWPJu840QT523CPjUVJ5MRWfyk.css',
-    'bdd378de01d9f54d2aa7637284d26deba7ad09e654742181b2ed66b2fae8ae22' => 'public://css/css_6sCZF2lGnQjc5Z7iaJKoFmAb1nHYWI90OyXJgZ_aTzk.css',
-    '165d69c6d6653967b2213099d5816d082f5604f496914aedba8d6c76cd7cf404' => 'public://css/css_RgO2QePe1wevnQB1MgGngtgT6qWBM84hkm-t8H2cvr4.css',
-    '267c10ab352d315f9f3af4c0b6254f45fcdadb250ec66f5909bbc67675539fc8' => 'public://css/css_q8pHykvvqVnzJGgfooszjpqJkwHPATTOD5jFNPDLTu4.css',
-    '586e4d641f74d0fbdea2ecffe62294e983c5961df8d0128aab1c561505f6b35a' => 'public://css/css_2THG1eGiBIizsWFeexsNe1iDifJ00QRS9uSd03rY9co.css',
-    '164ccbb780095ad938cc505b96022e22b8bb0465d4d89e9749544fe990182961' => 'public://css/css_lK8uYZvL4v4DP13JVHloXGiH_9HetnNKHfc-gU97ip0.css',
-    '08e6d8c22f81d960b5d1e19478b032f9ef14080c281d9d3e61da77bb3cb094de' => 'public://css/css_LSMaCH7cDiz_SGsndqQFv1zq5D4eZxq9vwM9ENLJ0Vg.css',
-    '032d72e2b3124645b11e59c23005327dc2b450af6aaa6bf3cad34a6a65a9d774' => 'public://css/css_ZDWl28hdmeinIcKg-HMrN6uKD0nTMld5NlXLmm5MH2U.css',
-    '0af5e4de6c3a850b6a6d69d45f1ca3e0d9cbeab1dbef696e1dab451339d3bc2b' => 'public://css/css_iPFXXxmG-PHAvxPDbD9MIkaTULydryzfk_-emr3bAjU.css',
-    '17528ab66adbe4a33b3922377d2a74bf7c8e0e7175e7dfd5e3237e8df10fa573' => 'public://css/css_FPqVYRQ8ZvwSl_YJuW44wkaRVhaaEUIeqh7_JyoyUDw.css',
-    'a44363bd34b4fb2dfdd287bbdfbf3f3d9614b38fab4389b6d574d92af50cc268' => 'public://css/css_zNHEi29tR-ceusmLpIW-Me8rpMU_MoPdBQtGlES9s-w.css',
-    'b61909b0a44f6164e2b2793bb6c58c9b0eb9166a46d2b4ce3ce574ad1adf4b46' => 'public://css/css_XHRCRpZFwwN7mUV4SJbBLcuf5B5HqdFoujsbxSAyQUk.css',
-    '793b560a692efbb1605a59c9885d6efed1379e9074af24b710e9d16494e18228' => 'public://css/css_sksuVxedbg7srMUtMjNWQ5Bjd9rGVCPx9eJ6NEs_jsE.css',
-    'cb9f93e666a396bb3eb14c5fd16f7ebd1cdd0067733eb0a2ab1b294b6f14f76f' => 'public://css/css_1kF33EODTO5gDyEbdpAfYzMKbjG3ottD1s5np0BNI8U.css',
-    'f05494fc83c9c8e2c74180252d01c9ea50f347143d606c3ea4a216ea0f24ce6e' => 'public://css/css_BR3eb_ceEn8jEAv9rAj8_gjpfC6A1BpCm8JGn5sUfnY.css',
-  );
-  $export['drupal_css_cache_files'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'drupal_http_request_fails';
   $strongarm->value = FALSE;
   $export['drupal_http_request_fails'] = $strongarm;

@@ -82,7 +82,6 @@ features[variable][] = diff_show_preview_changes_node_webform
 features[variable][] = diff_view_mode_preview_node_report
 features[variable][] = diff_view_mode_preview_node_volunteer_group
 features[variable][] = diff_view_mode_preview_node_webform
-features[variable][] = drupal_css_cache_files
 features[variable][] = drupal_http_request_fails
 features[variable][] = drupal_js_cache_files
 features[variable][] = drupal_private_key
