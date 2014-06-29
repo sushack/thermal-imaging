@@ -488,8 +488,9 @@ function tifeature_coreconfig_strongarm() {
   $strongarm->name = 'features_codecache';
   $strongarm->value = array(
     'tifeature_coreconfig' => array(
-      'dependencies' => 'bc39fea1f4e8415ececf62ccd900aa3d',
+      'dependencies' => '368a8351dd32d53b5c01edbdc5efb149',
       'variable' => 'ebe93f8b35e3a16be6878524e7a0a4bd',
+      'filter' => 'e1ba718b9bb5189bfb3604dcce922498',
     ),
     'tifeature_corecontenttypes' => array(
       'variable' => '9a449c2f1098f87b678a1e88e90acd0d',
