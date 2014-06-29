@@ -146,13 +146,6 @@ function tifeature_coreconfig_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'css_js_query_string';
-  $strongarm->value = 'n7w0bh';
-  $export['css_js_query_string'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'ctools_last_cron';
   $strongarm->value = 1404058061;
   $export['ctools_last_cron'] = $strongarm;
@@ -254,41 +247,6 @@ function tifeature_coreconfig_strongarm() {
   $strongarm->name = 'drupal_http_request_fails';
   $strongarm->value = FALSE;
   $export['drupal_http_request_fails'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'drupal_js_cache_files';
-  $strongarm->value = array(
-    'a571bc4156d0556568d7f04bc93f81c658b2e21fef9bb8229528c077ce9a0ccf' => 'public://js/js_xAPl0qIk9eowy_iS9tNkCWXLUVoat94SQT48UBCFkyQ.js',
-    '111d860265abe08204bdf363fb75e432b0104dd26ec9ad3853b748098098279b' => 'public://js/js_KCd8rbJYUruV1tRJnh4um34UYvyhlrSVCPR1jNko2h8.js',
-    '18dec2eef639d49eaf13fd0c8d498b8aa6a4be135bf0c7d5f5c2d06e49ccb71f' => 'public://js/js_Z7KZMYgTYGii2wYF35A88qRdF4qWCHdaoDOAsJIaX_8.js',
-    '56d8cacb0ad9b89b97a2694ae235c58361b4ad244ad29a36649a8ebb86dfec99' => 'public://js/js_VIkJ2sVcQvvAtzdrVQXhZZyXlmB8TeYYJjTLH6AVPEs.js',
-    '9e4f2711de33322f8b2a89eb33b1907dda5ba66cfcd3818347a959b3ee42af5a' => 'public://js/js_LlEfbJsHAz_rZ-EK4oEwe3pTGBMAWlHOb-MlOc7-gGg.js',
-    '4d7f9049678f01c84ce6cbe4715a131aa51546717085515925d8516e87db030e' => 'public://js/js_R7PHE4VMbGwjYGocSRgpf_jbs7Vr-x59o_KYADibh-o.js',
-    '74064312d50fd2dd08fba795312e5081e4623138cca4dcf80430e752d91d3bc1' => 'public://js/js_6V225Y29WNBtQhsga51jPxydjeoD0RJkWa0lWW6PG4g.js',
-    'ce1568318db63041c82976a0f99fea1dead236c2ba421686c5d44205537e2486' => 'public://js/js_3ub2jn6gR5KzYEPLc4kioJdZGzI7JwXN0DgvLTKTCB4.js',
-    'b76c38db17b0c1b408a64b9614000f566f243733740049e5ebda42dfb03564bb' => 'public://js/js_Gl_BENAKTr86DEj6hEuqfM0IMg--Xo6hBhL46Qgl2Ms.js',
-    '1741b5794b2b03b597bc8893f26b714c89594f4af4808f83801421e96be265d3' => 'public://js/js_mOUQY4bvafMq95-lONLDWOBf-S6HsczvXW0OYpCKfcw.js',
-    'e06310c7ea0806ea243937f4f603adae3b4fc1f73b220012dc91fe1b5a572712' => 'public://js/js_fsJyohKROZ7Ic7l8FKyAfw9f5yt3uBMJyUFU2brH5Sk.js',
-    '2f5b07ff641694622c8fedff13915559640d3812518169dea03ab4e76c591a8f' => 'public://js/js_7VXJO8X1PizyHy8_zG5YvEhuXlb4eyA-xsnh64RZ5H4.js',
-    '8831450cbff2f08fed3a584080912f8f7d236058214d654be7cdeb0445854feb' => 'public://js/js_RvYKptmYIOciihfDtVbxa7HOdgfz4W37AdFNVyBpkJM.js',
-    'b45d1a825092617f5ae63eaab0795d004135a7c75745821ff3499d0f5598f2ed' => 'public://js/js_KpA9hz2JrJNtLJhPetcht5942wDK74qDCwwc7hiRf7M.js',
-    'a3a22461a8da6591816cce74224ca2041ae5157587f4f8175c912b1c5c19772e' => 'public://js/js_rEjXCTv_Xrr9a7sMN7igG6NbVZuLTJjkot1sYHGblEc.js',
-    '772862683961363eba775f45132e36179b7a4822c337c19a754f858d0793aa8d' => 'public://js/js_N7J_fzaZvA1tv2HcSaz9_X4t9xaIG7yETWNYjMLVepE.js',
-    'dc589b931794ec265c5d55262b3866518c4b47f9ba802d69485397c7b7b7a77e' => 'public://js/js_lxVydVr4Yzd4ey6ghjlUuQZ0YBJxQbCaNG_6jShbc58.js',
-    '1b345f5155a86afb0fc4a6a27c1eb2b8a2cca501601803d7a13e9f835998c1c4' => 'public://js/js_frRYupwx7clw8VeKo5M9rdEIuyqzZXTgp7hlBA5SRhs.js',
-    '2fc6144f0e7ca286e360cade80279ed3d91426c4899fc597a15a73a2e2fdef22' => 'public://js/js_GA3uOoZyw11qKwkd-0KmNizpn97m7ZrMisYSQgrRvo4.js',
-    '96bb538d3fd9848655e211841715ec143688d789a84ec41dceff04e5c32dfc18' => 'public://js/js_Gnc4jDWPyINNudm0aCmBxBC-lY6rYX1Qj7DR53ZHoWQ.js',
-    '2c2228034cf804beeed23d036d152bf9ec36cb69f8658d89bfd8d30f38ef42a4' => 'public://js/js_wq02YlNROoRiNTsDW5kZJ2fEyZuvb4oPyE88od1iAAk.js',
-    '9a817238bdc62002f606d257ca99bf43bd69aaae81974c67cbaf43d61daa2472' => 'public://js/js_Z3daMAixFvdA5WycBJSnGSwvaPFqTi_ojday4T5s6jU.js',
-    '8ed0c4dc16644958e3caf1e65148709069b4f816d47e60e29b24db55a1b657d1' => 'public://js/js_aAlGj0C4DI7o_m9IO_M_DJP1CK2P4W9TmeC9iZ9SSKQ.js',
-    '8d1a32af29ce633262332ec5f311e9b301e3367f3ebfdb5babf6afea140abdb4' => 'public://js/js_aeFZu3iE6D4TMitu4ogk8lZpPoB1lbg8DyEehLfg3nw.js',
-    '6ee075b39285378b82e5a5461595bf8fb9809a0ae1ef72421cc2c6af00a6f1b8' => 'public://js/js_aD2QQxcerij9-KsbuQ2abuz4NEFA8Zw93CsupWIByVM.js',
-    '572d229946cfc94573d1b41240c9ee70531334413097fadfaa34b93467e6c7d6' => 'public://js/js_nvH8l66_w_MJ72Z_g0jjvXw-di4eNXVnpzAY3Mxy6l4.js',
-    'd52a4ff3a409ddfbe8d56bc15c6d9f6e9a68279bbcece1a341da8d86109cbe07' => 'public://js/js_w_Ap_fOzwlotIfJ3gYL0OSM1btD9IG2mlWykrDUwXTM.js',
-  );
-  $export['drupal_js_cache_files'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -454,47 +412,6 @@ function tifeature_coreconfig_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'features_codecache';
-  $strongarm->value = array(
-    'tifeature_coreconfig' => array(
-      'dependencies' => '368a8351dd32d53b5c01edbdc5efb149',
-      'variable' => 'ebe93f8b35e3a16be6878524e7a0a4bd',
-      'filter' => 'e1ba718b9bb5189bfb3604dcce922498',
-    ),
-    'tifeature_corecontenttypes' => array(
-      'variable' => '9a449c2f1098f87b678a1e88e90acd0d',
-      'field_base' => '4b1015bd3362e8bed78d6e6975bf9988',
-      'field_instance' => '021cc2eb4f627f73ebb94b430bc60507',
-      'taxonomy' => 'dcbaffe2f734b63a1b42ea0991c9fef9',
-      'dependencies' => 'd01f8c9a666639219978182b97636fbe',
-      'node' => '8ce726dcbe42eb5d9011cc6a094d15d7',
-      'field_group' => '2216547e96c5fd06eacc741a258950ff',
-    ),
-    'tifeature_contactform' => array(
-      'uuid_node' => '6bf4f71df01787a3d4196ebce144bb30',
-      'dependencies' => '7ebaff47adcde8834f94927a96e14dde',
-      'rules_config' => 'cb3e3fe89dfd0df65bc6ab5bc891c2c0',
-    ),
-    'tifeature_homepage' => array(
-      'variable' => '5226d6484f5dc136e8bc9a4b7fc17175',
-      'uuid_node' => 'e5791bd5488400712ed7a8b08231d418',
-      'dependencies' => '7668261cc06bbc133e221d7657fdf221',
-    ),
-    'tifeature_groupcontent' => array(
-      'variable' => 'd8d70008a3739060cf70ada597fd13d7',
-      'field_base' => 'f4f655f850cc7f75ca91c3297cf55ca5',
-      'field_instance' => '76e77da5da1349f128f5ffc8ce707b6f',
-      'dependencies' => '0379398d677a19f804c063b71d028ff4',
-      'node' => '5ac5414fbcb57b1e741a70bb46b1697c',
-      'fe_block_settings' => '093308ac5011cd38d48136e2c16d939e',
-      'field_group' => '340920f7d7c485d16f00fd787a7b372e',
-    ),
-  );
-  $export['features_codecache'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'features_ignored_orphans';
   $strongarm->value = array();
   $export['features_ignored_orphans'] = $strongarm;
@@ -568,13 +485,6 @@ function tifeature_coreconfig_strongarm() {
   $strongarm->name = 'less_devel';
   $strongarm->value = 0;
   $export['less_devel'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'less_dir';
-  $strongarm->value = 'gkpEroZAHJTvjRw82FhjdmFgeOs043AHla7NgpsfWtU';
-  $export['less_dir'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
