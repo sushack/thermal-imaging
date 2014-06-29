@@ -14,6 +14,7 @@ function tifeature_groupcontent_default_fe_block_settings() {
 
   $export['views-0cb1ff6edc283232fedfe25026419659'] = array(
     'cache' => -1,
+    'custom' => 0,
     'delta' => '0cb1ff6edc283232fedfe25026419659',
     'module' => 'views',
     'node_types' => array(),
@@ -39,6 +40,8 @@ function tifeature_groupcontent_default_fe_block_settings() {
         'weight' => -11,
       ),
     ),
+    'title' => '',
+    'visibility' => 0,
   );
 
   return $export;
